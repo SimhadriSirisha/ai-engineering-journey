@@ -10,6 +10,10 @@
 ### Why I think it was created:
 Easy coding without boilerplate OOP thinking
 
+### How python becomes the favorable programming language for AI/ML world ?
+- Because of its buil it datastructures
+- as its is scripting language and readable language, it easy for non-coding background to start from instead from scratch.
+
 ## Open question for tomorrow:
 Why exactly does the GIL block parallel CPU work? 
 How does Spark work around it?
