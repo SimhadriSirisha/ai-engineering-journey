@@ -1,10 +1,10 @@
 ## What is ** in python ?
 - its the power
-- eg: 1**2 = 1^2 = 1
+- eg: 2**3 = (2)^3 = 8
 
-## Python Data modal:
-Here, data modal explains about class and object creation in python. DataStructures likes list, array, tupple etc. 
-So this python framework has special methods called dunder methods like my_collection.`__ get_item __` to get an item from collection instead of *my_collection[key]*
+## Python Data model:
+Here, data model explains about class and object creation in python. DataStructures likes list, array, tupple etc. 
+The dunder is what Python calls internally when you write my_collection[key]. You don't call `__getitem__` directly — you write my_collection[key] and Python calls `__getitem__` for you. 
 
 ### Dunder methods
 refer: [exercise/example1-1.py](./exercise/example1-1.py)
