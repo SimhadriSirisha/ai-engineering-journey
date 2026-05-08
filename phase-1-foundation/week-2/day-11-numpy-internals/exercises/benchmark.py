@@ -3,21 +3,23 @@ import time
 
 # without NumPy
 a = list(range(1, 10000001))
-loop_time = 0
+loop_total = 0
 start = time.perf_counter()
 for item in a:
-    loop_time += item
+    loop_total += item
 end = time.perf_counter()
-print(f"Total summation time took without NumPy library: {end - start}")
+loop_time = end - start
+print(f"Total summation time took without NumPy library: {loop_time}")
 
 # with NumPy
 b = np.arange(1, 10000001, dtype=np.int64)
 start = time.perf_counter()
-numpy_time = np.sum(b)
+numpy_total = np.sum(b)
 end = time.perf_counter()
-print(f"Total summation time took with NumPy library: {end - start}")
+numpy_time = end - start
+print(f"Total summation time took with NumPy library: {numpy_time}")
 
-print(f"Is summation equal: {loop_time == numpy_time}")
+print(f"Is summation equal: {loop_total == numpy_total}")
 
 speedup = loop_time / numpy_time
 print(f"Speedup: {speedup}")
