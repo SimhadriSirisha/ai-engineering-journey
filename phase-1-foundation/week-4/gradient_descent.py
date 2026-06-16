@@ -66,7 +66,6 @@ preds = [model(w_final, x, b_final) for x in x_train]
 print(f"Final w: {w_final:.2f}, Final b: {b_final:.2f}")
 print(f"Final cost: {costs[-1]:.2f}")
 
-# Replace your existing fig, axes block with this
 
 fig, axes = plt.subplots(2, 3, figsize=(16, 8))
 fig.suptitle("Gradient Descent — Linear Regression", fontsize=14)
